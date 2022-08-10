@@ -9,3 +9,7 @@ class Student(models.Model):
     phone = models.IntegerField()
     address = models.CharField(max_length=100)
     photo = models.ImageField(upload_to='student_photos')
+
+    def __str__(self):
+        return self.name
+    

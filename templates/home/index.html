@@ -8,6 +8,13 @@
   </head>
   <body>
     <h1>App</h1>
-    <img src="{% static 'img/image.png' %}" alt="my image" />
+    {% for student in students %}
+        <p> {{ student.name }} </p>
+        <p> {{ student.age }} </p>
+        <p> {{ student.email }} </p>
+        <p> {{ student.phone }} </p>
+        <p> {{ student.address }} </p>
+        <img src="{{ student.photo.url }}" alt="{{ student.name }}" height="300" width="300">
+    {% endfor %}
   </body>
 </html>
