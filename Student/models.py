@@ -12,4 +12,10 @@ class Student(models.Model):
 
     def __str__(self):
         return self.name
-    
+
+
+
+
+# create a teacher model
+# the model should have name, age, email, phone, address, photo, salary, subject
+# the photo should be uploaded to the media folder
